@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Survey</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+    <body>
+        <header>
+            <div class="topTitle">Getting Great Deals on Video Games</div>
+        </header>
+
+        <div class="navBar" id="navBar">
+            <a href="file://wsl.localhost/Ubuntu/home/kiface/schoolProjects/HTML-and-CSS-capstone-project/tips.html">Tips & Info</a>
+            <a href="file://wsl.localhost/Ubuntu/home/kiface/schoolProjects/HTML-and-CSS-capstone-project/survey.html">Survey</a>
+            <a href="file://wsl.localhost/Ubuntu/home/kiface/schoolProjects/HTML-and-CSS-capstone-project/links.html">Helpful Links</a>
+            <a href="file://wsl.localhost/Ubuntu/home/kiface/schoolProjects/HTML-and-CSS-capstone-project/recs.html">My Recommendations</a>
+        </div>
+
+        <h1 class="pageTitle">Why Do You Like Video Games?</h1>
+        <p>
+            I enjoy reviewing video games and giving recommendations to others.
+            But sometimes I feel that what I appreciate in games is different than
+            what others look for. <br>
+            Please fill out this form to tell me what typically gives you an appreciation for a video game,
+            and what turns you away from others! <br>
+            Having this knowledge will help me review games in the future.
+        </p>
+
+        <form action="form-handling-url" method="post">
+
+            <fieldset>
+                <legend>Share your opinion with me!</legend>
+                <div class="textInput fieldLine">
+                    <div class="inputName">
+                        <label for="name"><strong>Name:</strong></label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <div class="inputAge">
+                        <label for="age"><strong>Age:</strong></label>
+                        <input type="text" id="age" name="age" size="2">
+                    </div>
+
+                    <div class="inputGender">
+                        <label for="gender"><strong>Gender:</strong></label>
+                        <input type="text" id="gender" name="gender" size="4">
+                    </div>
+                </div>
+
+                <div class="platform fieldLine">
+                    <strong>Which platforms do you play games on?</strong>
+                    <div class="checks">
+
+                        <div>
+                            <label for="pc">PC</label>
+                            <input type="checkbox" id="pc" name="platform">
+                        </div>
+
+                        <div>
+                            <label for="nintendo">Nintendo</label>
+                            <input type="checkbox" id="nintendo" name="platform">
+                        </div>
+
+                        <div>
+                            <label for="ps">Playstation</label>
+                            <input type="checkbox" id="ps" name="platform">
+                        </div>
+
+                        <div>
+                            <label for="xbox">Xbox</label>
+                            <input type="checkbox" id="xbox" name="platform">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="fieldLine">
+                    <label><strong>What are things that make you enjoy a video game?</strong></label><br>
+                    <textarea id="gameLikes" name="gameLikes" rows="9" cols="50"></textarea>
+                </div>
+
+                <div class="fieldLine">
+                    <label><strong> What are some game aspects that push you away from a video game?</strong></label> <br>
+                    <textarea id="gameDislikes" name="gameDislikes" rows="9" cols="50"></textarea>
+                </div>
+
+                <button type="submit" id="submit">Submit</button>
+
+            </fieldset>
+        </form>
+
+
+        <footer>
+            <img src="Z:\home\kiface\Photos\KisJourneyLogo.png" alt="Ki's Journey logo">
+        </footer>
+    </body>
+
+
+</html>
